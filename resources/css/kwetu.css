@@ -1,0 +1,224 @@
+:root {
+  --drkblue: #0a2463;
+  --lightblue: #009cff;
+  --lightbrown: #a87054;
+}
+
+body{
+}
+
+.header{
+padding-bottom: 0rem;
+margin-bottom: -1rem;
+}
+
+.header img{
+  height: 200px;
+
+}
+
+
+.bg-lightblue{
+  background-color: var(--lightblue);
+  padding:1rem;
+  color: white;
+}
+
+.bg-lightblue a{
+  color: black;
+}
+
+.bg-lightblue a:hover{
+  color: var(--drkblue);
+}
+
+
+
+.bg-blue{
+  background-color: var(--drkblue);
+  color: white;
+  padding: 1rem;
+}
+
+.bg-blue a{
+  color: var(--lightblue);
+}
+
+.bg-blue a:hover{
+  color: lightgray;
+}
+
+.bg-white{
+  padding: 1rem;
+}
+
+.bg-white a{
+  color: var(--drkblue);
+}
+
+.bg{
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+
+.bg-brown{
+  background-color: var(--lightbrown);
+}
+
+.container{
+  font-size: 1.25rem;
+}
+
+
+@media only screen and (min-width: 992px){
+  .floater{
+    float:right;
+    max-height: 25rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .floater-left{
+    float:left;
+    max-width: 45%;
+    padding: 0;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .bottom-img{
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .floater{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 2rem;
+  }
+
+  .floater-left{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 2rem;
+  width: 70%;
+  }
+
+  .bottom-img{
+    margin-top: 1.5rem;
+    width: 60%;
+  }
+}
+
+.bg-intro-image{
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../../resources/images/DSC_0560_sm.jpg);
+  background-size:cover;
+}
+
+@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+  .bg-intro-image {
+    background-color: rgba(255, 255, 255, .5);
+    -webkit-backdrop-filter: blur(10em);
+    backdrop-filter: blur(10em);
+  }
+}
+.intro-image{
+  background-image: url(../../resources/images/DSC_0560_sm.jpg);
+  background-repeat: no-repeat;
+  min-height: 30rem;
+  background-position: center;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+
+.center{
+  text-align: center;
+}
+.footer{
+    padding-bottom: 2rem;
+}
+
+.indent{
+  padding-left: 5rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .spanner{
+    height: 10rem;
+  }
+
+}
+
+.spanner .paypal{
+  margin-top: 0rem;
+}
+
+@media only screen and (max-width: 991px){
+  .spanner .paypal{
+    display: none;
+  }
+}
+
+.menu-item{
+  background-color: var(--drkblue);
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  border-left: 5px solid white;
+  font-size: 1.15rem;
+}
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+  .menu-item{
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width:768px) and (max-width: 991px) {
+  .menu-item{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 767px){
+  .menu-item{
+    border-left: none;
+  }
+  .spanner{
+    height: 0.25rem;
+  }
+}
+
+.menu-item:hover{
+  background-color: var(--lightblue);
+  color: black;
+  cursor: pointer;
+}
+
+.menu-item:hover a{
+  background-color: var(--lightblue);
+  color: black;
+  cursor: pointer;
+}
+
+.menu-item a{
+  color: white;
+}
+
+.menu-item a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.space-bottom{
+  padding-bottom: 3rem;
+}
